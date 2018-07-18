@@ -1,0 +1,14 @@
+extends layout
+block content
+  form(method= "POST", action="/admin/register")
+    .form-group
+      input.form-control(name="username", type="text", placeholder="entrez votre username")
+    .form-group  
+      input.form-control(name="name", type="text", placeholder="entrez votre nom")
+    .form-group  
+      input.form-control(name="email", type="email", placeholder="entrez votre mail")
+    .form-group  
+      input.form-control(name="password", type="password", placeholder="entrez votre mot de passe")
+    .form-group  
+      input.form-control(name="password2", type="password", placeholder="confirmez votre mot de passe")
+    input.btn.btn-primary(type="submit", name='submit' value='enregistrer')

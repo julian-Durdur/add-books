@@ -1,0 +1,10 @@
+extends layout
+block content
+  h1 login
+  br
+  form(method= "POST", action="/admin/login")
+    .form-group
+      input.form-control(name="email", type="email", placeholder="entrez votre mail")
+    .form-group  
+      input.form-control(name="password", type="password", placeholder="entrez votre mot de passe")
+      input.btn.btn-primary(type="submit", name='submit' value="Login")

@@ -1,0 +1,18 @@
+extends layout
+block content
+  h2 add books
+  p Veuillez inserer un livre: 
+  form(method= "POST", action="/books/add_book" enctype= "multipart/form-data")
+    .form-group
+      input.form-control(name="title", type="text", placeholder="entrez le titre de votre livre")
+    .form-group  
+      input.form-control(name="author", type="text", placeholder="entrez l'auteur de votre livre")
+    .form-group  
+      input.form-control(name="years", type="date", placeholder="entrez l'anné de publication")
+    .form-group  
+      input.form-control(name="description", type="text", placeholder="entrez le synopsis")
+    .form-group
+      input.form-control(name="img", type="file")    
+        
+    input.btn.btn-primary(type="submit", name='submit' value='enregistrer')
+        
